@@ -8,7 +8,7 @@ import lombok.Data;
 public class Lead {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Integer id;
+    private Integer leadId;
     private String firstName;
     private String lastName;
     private String email;
@@ -16,6 +16,7 @@ public class Lead {
     private String company;
     private String source;
     @Embedded
-    private LeadCustomFields leadCustomFields;
+    private CustomFields customFields;
+    private String status;  // New, Contacted, Interested, Converted
 
 }

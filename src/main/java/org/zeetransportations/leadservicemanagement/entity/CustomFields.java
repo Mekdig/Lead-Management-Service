@@ -5,7 +5,7 @@ import lombok.Data;
 
 @Embeddable
 @Data
-public class LeadCustomFields {
+public class CustomFields {
     private Integer leadScore;
     private String industry;
 }
